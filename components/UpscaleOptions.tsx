@@ -15,10 +15,10 @@ const SCALES: { value: 2 | 4 | 8; label: string; desc: string }[] = [
   { value: 8, label: '8×', desc: 'Maximum' },
 ];
 
-const STYLES: { value: 'photo' | 'illustration' | 'anime'; label: string; icon: string }[] = [
-  { value: 'photo', label: 'Photo', icon: '📷' },
-  { value: 'illustration', label: 'Illustration', icon: '🎨' },
-  { value: 'anime', label: 'Anime', icon: '✏️' },
+const STYLES: { value: 'photo' | 'illustration' | 'anime'; label: string }[] = [
+  { value: 'photo', label: 'Photo' },
+  { value: 'illustration', label: 'Illustration' },
+  { value: 'anime', label: 'Anime' },
 ];
 
 export default function UpscaleOptions({
@@ -47,13 +47,13 @@ export default function UpscaleOptions({
               className={`relative py-4 rounded-2xl border text-center transition-all duration-300 overflow-hidden ${
                 scale === s.value
                   ? 'border-purple-500 bg-purple-500/20 text-white'
-                  : 'border-white/10 bg-white/5 text-white/60 hover:border-white/30 hover:bg-white/10'
+                  : 'border-white/10 bg-white/5 text-white/60 hover:border-purple-500/40 hover:bg-purple-500/10'
               }`}
             >
               {scale === s.value && (
                 <motion.div
                   layoutId="scale-active"
-                  className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-2xl"
+                  className="absolute inset-0 bg-purple-500/20 rounded-2xl"
                 />
               )}
               <div className="relative z-10">
@@ -77,19 +77,18 @@ export default function UpscaleOptions({
               onClick={() => onStyleChange(s.value)}
               className={`relative py-4 rounded-2xl border text-center transition-all duration-300 overflow-hidden ${
                 style === s.value
-                  ? 'border-blue-500 bg-blue-500/20 text-white'
-                  : 'border-white/10 bg-white/5 text-white/60 hover:border-white/30 hover:bg-white/10'
+                  ? 'border-purple-500 bg-purple-500/20 text-white'
+                  : 'border-white/10 bg-white/5 text-white/60 hover:border-purple-500/40 hover:bg-purple-500/10'
               }`}
             >
               {style === s.value && (
                 <motion.div
                   layoutId="style-active"
-                  className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl"
+                  className="absolute inset-0 bg-purple-500/20 rounded-2xl"
                 />
               )}
               <div className="relative z-10">
-                <div className="text-2xl">{s.icon}</div>
-                <div className="text-xs mt-1">{s.label}</div>
+                <div className="text-sm font-medium">{s.label}</div>
               </div>
             </button>
           ))}

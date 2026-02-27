@@ -8,11 +8,10 @@ export default function Footer() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5 }}
-      className="mt-auto glass border-t border-white/10 py-6"
+      className="mt-auto glass border-t border-purple-800/30 py-6"
     >
       <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/40">
         <div className="flex items-center gap-2">
-          <span>✨</span>
           <span className="font-semibold gradient-text">AI Upscaler</span>
           <span>· {new Date().getFullYear()}</span>
         </div>
@@ -29,7 +28,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <p>Built with Next.js &amp; ❤️</p>
+        <p>Built with Next.js</p>
       </div>
     </motion.footer>
   );

@@ -69,7 +69,7 @@ export default function Home() {
             <div className="w-full max-w-2xl space-y-6">
               {/* Preview thumbnail */}
               {previewUrl && (
-                <div className="glass rounded-2xl p-4 text-center">
+                <div className="glass rounded-2xl p-4 text-center border border-purple-700/30">
                   <img
                     src={previewUrl}
                     alt="Uploaded preview"
@@ -88,9 +88,9 @@ export default function Home() {
               />
               <button
                 onClick={handleStartUpscaling}
-                className="w-full py-4 rounded-2xl font-semibold text-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 hover:scale-[1.02] active:scale-[0.98]"
+                className="w-full py-4 rounded-2xl font-semibold text-lg bg-purple-700 hover:bg-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-900/30 hover:scale-[1.02] active:scale-[0.98]"
               >
-                ✨ Start Upscaling
+                Start Upscaling
               </button>
               <button
                 onClick={handleReset}

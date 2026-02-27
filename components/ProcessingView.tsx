@@ -38,10 +38,10 @@ export default function ProcessingView({ progress }: ProcessingViewProps) {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 1.5, ease: 'linear' }}
-          className="absolute inset-0 rounded-full border-4 border-transparent border-t-purple-500 border-r-blue-500"
+          className="absolute inset-0 rounded-full border-4 border-transparent border-t-purple-500 border-r-purple-700"
         />
-        <div className="absolute inset-3 rounded-full bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center text-2xl">
-          ✨
+        <div className="absolute inset-3 rounded-full bg-purple-500/20 flex items-center justify-center">
+          <div className="w-4 h-4 rounded-full bg-purple-500/60" />
         </div>
       </div>
 
@@ -65,7 +65,7 @@ export default function ProcessingView({ progress }: ProcessingViewProps) {
             initial={{ width: '0%' }}
             animate={{ width: `${progress}%` }}
             transition={{ duration: 0.3 }}
-            className="h-full bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"
+            className="h-full bg-purple-600 rounded-full"
           />
         </div>
         <p className="text-sm text-white/40 text-right">{progress}%</p>
