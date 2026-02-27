@@ -73,13 +73,13 @@ export default function ComparisonSlider({ before, after }: ComparisonSliderProp
 
       {/* Divider line */}
       <div
-        className="absolute top-0 bottom-0 w-0.5 bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+        className="absolute top-0 bottom-0 w-0.5 bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.8)]"
         style={{ left: `${sliderPos}%` }}
       >
         {/* Handle */}
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-xl flex items-center justify-center text-gray-800 text-sm font-bold select-none"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-purple-600 shadow-xl shadow-purple-900/50 flex items-center justify-center text-white text-sm font-bold select-none"
         >
           ⇔
         </motion.div>
@@ -89,8 +89,8 @@ export default function ComparisonSlider({ before, after }: ComparisonSliderProp
       <div className="absolute top-3 left-3 px-2 py-1 rounded-lg bg-black/50 text-xs text-white/80 backdrop-blur-sm">
         Original
       </div>
-      <div className="absolute top-3 right-3 px-2 py-1 rounded-lg bg-purple-500/50 text-xs text-white backdrop-blur-sm">
-        Upscaled ✨
+      <div className="absolute top-3 right-3 px-2 py-1 rounded-lg bg-purple-600/60 text-xs text-white backdrop-blur-sm">
+        Upscaled
       </div>
     </div>
   );

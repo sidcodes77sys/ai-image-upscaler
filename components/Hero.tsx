@@ -50,11 +50,9 @@ export default function Hero() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.97 }}
         onClick={scrollToUpload}
-        className="relative px-8 py-4 rounded-2xl font-semibold text-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 shadow-2xl shadow-purple-500/30"
+        className="relative px-8 py-4 rounded-2xl font-semibold text-lg bg-purple-700 hover:bg-purple-600 transition-all duration-300 shadow-2xl shadow-purple-900/50"
       >
-        <span className="relative z-10">🚀 Try It Free</span>
-        {/* Glow */}
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-600 to-blue-600 blur-xl opacity-50 -z-10 animate-pulse" />
+        Try It Free
       </motion.button>
 
       {/* Scroll indicator */}

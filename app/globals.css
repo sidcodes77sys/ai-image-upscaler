@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0f;
+  --background: #000000;
   --foreground: #ededed;
 }
 
@@ -17,35 +17,15 @@ body {
   overflow-x: hidden;
 }
 
-/* Utility classes for blob animations */
-.animate-blob {
-  animation: blob 8s infinite;
-}
-.animation-delay-2000 {
-  animation-delay: 2s;
-}
-.animation-delay-4000 {
-  animation-delay: 4s;
-}
-
-@keyframes blob {
-  0%   { transform: translate(0px, 0px) scale(1); }
-  33%  { transform: translate(30px, -50px) scale(1.1); }
-  66%  { transform: translate(-20px, 20px) scale(0.9); }
-  100% { transform: translate(0px, 0px) scale(1); }
-}
-
-/* Glassmorphism base */
+/* Solid dark card base */
 .glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(124, 58, 237, 0.2);
 }
 
-/* Gradient text utility */
+/* Purple gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #a855f7, #3b82f6, #ec4899);
+  background: linear-gradient(135deg, #c084fc, #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

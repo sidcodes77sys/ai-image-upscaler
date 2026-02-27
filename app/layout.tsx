@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-[#0a0a0f] text-white antialiased">
+      <body className="min-h-screen bg-black text-white antialiased">
         <div className="relative min-h-screen">
           <LiveBackground />
           <div className="relative z-10">{children}</div>
